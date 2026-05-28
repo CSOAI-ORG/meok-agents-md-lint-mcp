@@ -1,0 +1,31 @@
+{
+  "name": "meok-agents-md-lint-mcp",
+  "title": "Meok Agents Md Lint Mcp",
+  "description": "MEOK AGENTS.md Linter MCP \u2014 validates the cross-vendor coding-agent spec (Cursor / Claude Code / Cline / Windsurf / Aider / OpenAI Codex) stewarded by AAIF. Security smells + consistency lint + passing templates. By MEOK AI Labs.",
+  "version": "1.0.0",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "lint_agents_md"
+    },
+    {
+      "name": "check_required_sections"
+    },
+    {
+      "name": "check_security_smells"
+    },
+    {
+      "name": "check_consistency"
+    },
+    {
+      "name": "list_spec_sections"
+    },
+    {
+      "name": "generate_passing_template"
+    }
+  ]
+}

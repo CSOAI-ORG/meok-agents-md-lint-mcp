@@ -1,0 +1,22 @@
+# meok-agents-md-lint-mcp
+
+> MEOK AGENTS.md Linter MCP — validates the cross-vendor coding-agent spec (Cursor / Claude Code / Cline / Windsurf / Aider / OpenAI Codex) stewarded by AAIF. Security smells + consistency lint + passing templates. By MEOK AI Labs.
+
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- lint_agents_md
+- check_required_sections
+- check_security_smells
+- check_consistency
+- list_spec_sections
+- generate_passing_template
+
+## Install
+```
+pip install meok-agents-md-lint-mcp
+```
+
+## Links
+- PyPI: https://pypi.org/project/meok-agents-md-lint-mcp/
+- Docs: https://meok.ai

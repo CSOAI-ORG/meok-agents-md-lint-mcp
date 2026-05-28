@@ -1,0 +1,19 @@
+name: meok-agents-md-lint-mcp
+description: "> ## 🧱 Part of the MEOK Governance + A2A Substrate"
+version: 1.0.0
+author: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/MEOK-AI-Labs/meok-agents-md-lint-mcp
+license: MIT
+categories:
+  - compliance
+  - ai
+  - governance
+
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+    - fastapi
+    - uvicorn
+    - mcp
