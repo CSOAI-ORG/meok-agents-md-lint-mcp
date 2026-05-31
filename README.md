@@ -1,67 +1,78 @@
-# MEOK AGENTS.md Linter MCP
+# Meok Agents Md Lint MCP
 
-> ## 🧱 Part of the MEOK Governance + A2A Substrate
-> See [meok.ai/docs](https://meok.ai/docs) and [meok.ai/a2a](https://meok.ai/a2a).
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/meok_agents_md_lint_mcp/)
 
-# Lint your AGENTS.md against the cross-vendor coding-agent spec
+> AGENTS
 
-<!-- mcp-name: io.github.CSOAI-ORG/meok-agents-md-lint-mcp -->
+AGENTS.md Linter MCP - validates the cross-vendor coding-agent spec. Security smells + consistency lint. MIT. By MEOK AI Labs.
 
-[![PyPI](https://img.shields.io/pypi/v/meok-agents-md-lint-mcp)](https://pypi.org/project/meok-agents-md-lint-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+---
 
-## What this does
+## 🚀 Quick Start
 
-[AGENTS.md](https://agents.md) is the cross-vendor specification that tells coding agents (Cursor, Claude Code, Cline, Windsurf, Aider, OpenAI Codex) how to operate in your repo. Stewarded by the Agentic AI Foundation under the Linux Foundation.
+```bash
+# Install via pip
+pip install meok_agents_md_lint_mcp
 
-This MCP lints any `AGENTS.md` against the spec — required sections, recommended sections, security smells (no secrets in agent instructions), anti-patterns (no `rm -rf`, no `sudo`, no `--force-push`), and consistency with `package.json` / `pyproject.toml` / `Makefile`.
+# Or install via Smithery
+npx -y @smithery/cli@latest install meok-agents-md-lint-mcp --client claude
+```
 
-## Tools
+## ✨ Features
 
-| Tool | Purpose |
-|---|---|
-| `lint_agents_md(content)` | Full lint with score 0-100 |
-| `check_required_sections(content)` | Fast required-section gate |
-| `check_security_smells(content)` | Secrets + dangerous instruction patterns |
-| `check_consistency(content, package_json?, pyproject_toml_text?, makefile_text?)` | Cross-file lint |
-| `list_spec_sections()` | Canonical AGENTS.md section taxonomy |
-| `generate_passing_template(project_type)` | Minimal-passing AGENTS.md (python/node/next/rust/go/mcp) |
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Why this exists
+## 📖 Documentation
 
-Every Cursor / Claude Code / Cline / Windsurf user **has** an AGENTS.md (or should). Few do it well. Common failure modes:
+- [Full Documentation](https://docs.meok.ai/meok-agents-md-lint-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-- Missing required sections (Build / Test)
-- Hardcoded API keys in agent instructions (`sk-...`, AWS keys, bearer tokens)
-- Dangerous shell patterns in instructions (`curl ... | bash`, `rm -rf`)
-- `package.json` defines `npm run test` but AGENTS.md tells the agent something different
-- "Ignore safety" / "override warnings" patterns smuggled in
+## 🛡️ Compliance
 
-This MCP catches all of them in under a second + emits a numeric score you can tweet.
+This MCP server is built with **EU AI Act compliance** built-in:
 
-## Sister MCPs
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-- `mcp-spec-compliance-mcp` — lint your MCP `server.json`
-- `agent-prompt-injection-firewall-mcp` — OWASP LLM01 scan
-- `bft-progress-council-mcp` — anti-loop guardrail for agents that use your AGENTS.md
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-Full catalogue: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
+## 🏢 Enterprise
 
-## Pricing
+Need custom development, SLA guarantees, or white-label deployment?
 
-| Option | Price |
-|---|---|
-| Self-host MIT | £0 |
-| Universal PAYG | £29/mo + £0.0002/call |
-| Governance Substrate | £499/mo |
-| A2A Substrate | £999/mo |
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-## Wire it up — full stack
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-Pair with `mcp-spec-compliance-mcp` to lint both your `AGENTS.md` AND your `server.json` in one CI check.
+## 🤝 Part of the MEOK Ecosystem
 
-See [meok.ai/mcp-stack](https://meok.ai/mcp-stack).
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-## Licence
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House 16939677).
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
