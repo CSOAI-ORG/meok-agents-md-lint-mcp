@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+Buy Pro: https://www.csoai.org/checkout
+
 MEOK AGENTS.md Linter MCP — cross-vendor coding-agent spec validator
 =====================================================================
 

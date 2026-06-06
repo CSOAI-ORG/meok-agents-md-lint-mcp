@@ -1,4 +1,7 @@
 # Meok Agents Md Lint MCP
+mcp-name: io.github.CSOAI-ORG/meok-agents-md-lint-mcp
+
+# MEOK AGENTS.md Linter MCP
 
 [![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
 [![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
@@ -118,3 +121,4 @@ Once configured, ask your assistant, for example:
 - "Use `lint_agents_md` to …"
 - "Use `check_required_sections` to …"
 - "Use `check_security_smells` to …"
+<!-- BUY-LADDER:END -->
