@@ -1,0 +1,77 @@
+{
+  "name": "meok-agents-md-lint-mcp",
+  "description": "MEOK AGENTS.md Linter MCP \u2014 validates the cross-vendor coding-agent spec (Cursor / Claude Code /",
+  "url": "https://proofof.ai/scorecard/meok-agents-md-lint-mcp.html",
+  "version": "1.0.1",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "lint_agents_md",
+      "name": "Lint Agents Md",
+      "description": "lint_agents_md via meok-agents-md-lint-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_required_sections",
+      "name": "Check Required Sections",
+      "description": "check_required_sections via meok-agents-md-lint-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_security_smells",
+      "name": "Check Security Smells",
+      "description": "check_security_smells via meok-agents-md-lint-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_consistency",
+      "name": "Check Consistency",
+      "description": "check_consistency via meok-agents-md-lint-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_spec_sections",
+      "name": "List Spec Sections",
+      "description": "list_spec_sections via meok-agents-md-lint-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_passing_template",
+      "name": "Generate Passing Template",
+      "description": "generate_passing_template via meok-agents-md-lint-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
