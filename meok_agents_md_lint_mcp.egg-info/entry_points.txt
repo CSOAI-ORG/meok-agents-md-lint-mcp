@@ -1,0 +1,2 @@
+[console_scripts]
+meok-agents-md-lint-mcp = server:main
