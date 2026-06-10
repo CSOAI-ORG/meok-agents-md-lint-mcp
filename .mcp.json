@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "meok-agents-md-lint-mcp": {
+      "command": "uvx",
+      "args": [
+        "meok-agents-md-lint-mcp"
+      ]
+    }
+  }
+}
