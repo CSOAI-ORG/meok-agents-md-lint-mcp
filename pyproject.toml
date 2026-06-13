@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "meok-agents-md-lint-mcp"
-version = "1.0.1"
+version = "1.0.2"
 description = "MEOK AGENTS.md Linter MCP — validates the cross-vendor coding-agent spec (Cursor / Claude Code / Cline / Windsurf / Aider / OpenAI Codex) stewarded by AAIF. Security smells + consistency lint + passing templates. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }

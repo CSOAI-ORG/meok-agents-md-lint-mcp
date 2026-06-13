@@ -1,0 +1,134 @@
+{
+  "name": "Meok Agents Md Lint Mcp",
+  "version": "1.0.0",
+  "url": "https://mcp.meok.ai/meok-agents-md-lint-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "MEOK AGENTS.md Linter MCP — validates the cross-vendor coding-agent spec (Cursor / Claude Code / Cline / Windsurf / Aider / OpenAI Codex) stewarded by AAIF. Security smells + consistency lint + passing templates. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "lint_agents_md",
+      "name": "Lint Agents Md",
+      "description": "Lint Agents Md — a tool of the meok-agents-md-lint-mcp MCP.",
+      "tags": [
+        "security",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "check_required_sections",
+      "name": "Check Required Sections",
+      "description": "Check Required Sections — a tool of the meok-agents-md-lint-mcp MCP.",
+      "tags": [
+        "security",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "check_security_smells",
+      "name": "Check Security Smells",
+      "description": "Check Security Smells — a tool of the meok-agents-md-lint-mcp MCP.",
+      "tags": [
+        "security",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "check_consistency",
+      "name": "Check Consistency",
+      "description": "Check Consistency — a tool of the meok-agents-md-lint-mcp MCP.",
+      "tags": [
+        "security",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_spec_sections",
+      "name": "List Spec Sections",
+      "description": "List Spec Sections — a tool of the meok-agents-md-lint-mcp MCP.",
+      "tags": [
+        "security",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "generate_passing_template",
+      "name": "Generate Passing Template",
+      "description": "Generate Passing Template — a tool of the meok-agents-md-lint-mcp MCP.",
+      "tags": [
+        "security",
+        "agent"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "meok-agents-md-lint-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
